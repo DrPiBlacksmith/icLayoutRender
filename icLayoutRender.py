@@ -9,6 +9,7 @@
 import gdspy
 import pandas as pd
 import math
+from gds2pdf import gds2pdf
 from GDSLatexConverter import GDSLatexConverter
 import os
 import sys, getopt
@@ -17,6 +18,7 @@ def main(argv):
    cellName = ''
    layerColors = ''
    pdfTex=False
+   
 
    try:
       opts, args = getopt.getopt(argv,"hXg:m:",["cellNameFile=","layerColorsFile="])
@@ -34,6 +36,8 @@ def main(argv):
          cellName = arg
       elif opt in ("-m", "--map"):
          layerColors = arg
+      #elif opt in ("-o", "--opacity"):
+      #   opacity = arg
       else:
          assert False, "unhandled option"
    return (pdfTex,cellName,layerColors)
@@ -66,3 +70,4 @@ response = input()
 if response != "yes":
    sys.exit(3)
     
+gds2pdf(cellName,pdfName,layerColors, pdfTex)
