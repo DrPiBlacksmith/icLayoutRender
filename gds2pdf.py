@@ -15,9 +15,9 @@ import os
 def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
 
     gdsii = gdspy.GdsLibrary()
-    lib = gdsii.read_gds(infile=cellName+'.gds')#gds file open
+    lib = gdsii.read_gds(infile=cellName)#gds file open
 
-    Colors = pd.read_map(layerColors+'.map',sep='!',dtype={'GDSNumber':int,'Layer':str,'Color':str})#map file open
+    Colors = pd.read_map(layerColors,sep='!',dtype={'GDSNumber':int,'Layer':str,'Color':str})#map file open
     #GDS layer numbers and names are mapped to the colors
     Colors.set_index('GDSNumber',inplace = True)
     Colors.drop(columns=['Layer'],inplace = True)
@@ -47,7 +47,7 @@ def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
         try:
             from pdf2image import convert_from_path
             
-            images = convert_from_path(filename+'.pdf',dpi=200)
+            images = convert_from_path(filename,dpi=200)
         except:
             img = 'PDF could not be displayed. Please install the library wand (pip install wand).'
         return img
