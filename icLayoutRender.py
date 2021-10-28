@@ -58,13 +58,13 @@ if os.path.isfile(cellName)==False:
 if bool(layerColors)==False:
     print("Please enter the layer colors:")
     layerColors = input()
-
+print(layerColors)
 if os.path.isfile(layerColors)==False:
     print(f"The file %s does not exist.\n Please check the filename and restart icLayoutRender\n"% layerColors)
     sys.exit(2)
 
-pdfName = cellName.split('.')[0]+'.pdf'
-print("Converting %s to %s with %s layer colors\n"% (cellName,pdfName,layerColors))
+pdfName = cellName.replace(".gds","")
+print("Converting %s to %s.pdf with %s layer colors\n"% (cellName,pdfName,layerColors))
 print("Do you want to continue ? [yes|no]:")
 response = input()
 if response != "yes":

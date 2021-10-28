@@ -17,7 +17,7 @@ def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
     gdsii = gdspy.GdsLibrary()
     lib = gdsii.read_gds(infile=cellName)#gds file open
 
-    Colors = pd.read_map(layerColors,sep='!',dtype={'GDSNumber':int,'Layer':str,'Color':str})#map file open
+    Colors = pd.read_csv(layerColors,sep='!',dtype={'GDSNumber':int,'Layer':str,'Color':str})#map file open
     #GDS layer numbers and names are mapped to the colors
     Colors.set_index('GDSNumber',inplace = True)
     Colors.drop(columns=['Layer'],inplace = True)
@@ -41,6 +41,9 @@ def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
 
 
     def save_and_plot(converter, filename):
+        # Get Ouput folder OS lib
+        # cd to folder
+        # compile
         converter.compile(filename=filename, overwrite=True)
 
         # Show the output pdf
@@ -60,5 +63,5 @@ def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
         conv.textype = GDSLatexConverter.PDFLATEX
 
     conv.layer_drawopt = drawopt     
-
+    print(pdfName)
     save_and_plot(converter=conv, filename=pdfName)
