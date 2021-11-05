@@ -74,15 +74,14 @@ Moreover, CAD tools usually uses the color code proposed in the example \autoref
 The GDS number is the data that mostly change between different PDK files.
 ![Checking layer numbers in a commercial PDK as [@XFAB2019]. \label{fig:LayerNumbers}](Images/LayerNumbers.png){ width=40% }
 ![Checking layer collors in a commercial PDK as [@XFAB2019]. \label{fig:LayerColors}](Images/LayerColors.png){ width=40% }
-```LaTex
-\begin{verbatim}
-\label{ver:LayerMAP} 
+(#ver:LayerMAP)
+
+```
 GDSNumber!Layer!Collor
 4!DIFF!{rgb:red,0;green,255;blue,0}
 5!POLY!{rgb:red,255;green,0;blue,0}
 6!NIMP!{rgb:red,217;green,204;blue,0}
 7!PIMP!{rgb:red,255;green,191;blue,242}
-\end{verbatim} 
 ```
 
 To prove the advantage of using icLayoutRender tool, the authors have rendered the IC layout known as StrongArm latched comparator and proposed in [@Fonseca2017]. 
