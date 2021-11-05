@@ -1,13 +1,37 @@
+# icLayoutRender
+<!--
+*** Thanks for checking out this README. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again!  :D
+***
+***
+-->
 
-# gds2pdf
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![GNU License][license-shield]][license-url]
 
-Havin a high quality layout image for publishing is a painfull process. And usually published layouts have poor quality.
-
-This library intends to make this process as straight forward as possible. By inputing a .gds file the script outputs a .tex and a pdf file ready for publication.
 
 
+<!-- PROJECT LOGO -->
+<br />
 
-## API Reference
+Having a high quality layout image for publishing is a painfull process. Unfortunatelly, usually published layouts have poor quality, very difficult to read and understand what is going on from the schematics. This library intends to make this process as straight forward as possible. By inputing a *.gds file and a layer color *.map the script outputs a *.tex and a *.pdf file ready for publication.
+
+
+
+## IC Layout Render: a Step-by-Step Approach
 
 ### Generating a GDS File on CADENCE Virtuoso 
 
@@ -53,28 +77,22 @@ Obtain the colors from Virtuoso layout using
   > Display Resources Tool Box->Edit->File->Save
 ![](/Images/LayerColors.png)
 
-Compare the *.tf file and the *.drf
+Compare the *.tf file and the *.drf to be sure that the layer number, name and color are correct mapped.
 
-Write a new layerColors_PDK.map according to the example
-
-Missing layers will be neglected
+Write a new layerColors_PDK.map according to the example. Be aware that missing layers will be neglected
 
 ```bash
-  python gds2pdf
-  Please enter the cell name: **INPUT FILE** # No GDS extention
-  Please enter the layer colors: **LayerColor** # No CSV extention
+  python3 icLayoutREnder.py
+  Please enter the cell name: **INPUT FILE** 
+  Please enter the layer colors: **LayerColor** 
 ```
-
-
-
-  
-## Authors
-
-- [J. R. R. O. Martins](https://www.github.com/Rapos0)
-- [Pietro M. Ferreira](https://www.github.com/DrPiBlacksmith)
-
-
-  
+For some help please refer to
+```bash
+  python3 icLayoutRender.py -h
+  Usage: icLayoutRender.py -g <cellNameFile> -m <layerColorsFile>
+  For pdfTex compiler do: icLayoutRender.py -X -g <cellNameFile> -m <layerColorsFile>
+```
+   
 ## Installation
 
 ### Linux
@@ -131,16 +149,67 @@ pip install git+https://github.com/Aypac/GDSLatexConverter.git
 For installing latex compiler we sugest [MiKTeX](https://miktex.org/download) 
 
 
-## Screenshots
+## Layout Illustrations using icLayoutRender
+
 ### Miller Operational Transconductance Amplifier
 ![OTA_Miller](Examples/OTA_Miller.svg)
 
 ### Strong Arm Comparator
 ![SA_Razavi2015](Examples/SA_Razavi2015.svg)
 
-  
+
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/DrPiBlacksmith/icLayoutRender/issues) for a list of proposed features (and known issues).
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+<!-- LICENSE -->
 ## License
 
-[GNU](https://choosealicense.com/licenses/agpl-3.0)
+Distributed under the GNU AGPL-3.0 License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+## Authors
+
+- [J. R. R. O. Martins](https://www.github.com/Rapos0) - jrraposo1@gmail.com
+- [Pietro M. Ferreira](https://www.github.com/DrPiBlacksmith) - maris@ieee.org
+
+
+Project Link: [https://github.com/DrPiBlacksmith/icLayoutRender](https://github.com/DrPiBlacksmith/icLayoutRender)
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [GDSLatexConverter](https://github.com/Aypac/GDSLatexConverter)
+
 
   
+[contributors-shield]: https://img.shields.io/github/contributors/DrPiBlacksmith/icLayoutRender.svg?style=for-the-badge
+[contributors-url]: https://github.com/DrPiBlacksmith/icLayoutRender/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/DrPiBlacksmith/icLayoutRender.svg?style=for-the-badge
+[forks-url]: https://github.com/DrPiBlacksmith/icLayoutRender/network/members
+[stars-shield]: https://img.shields.io/github/stars/DrPiBlacksmith/icLayoutRender.svg?style=for-the-badge
+[stars-url]: https://github.com/DrPiBlacksmith/icLayoutRender/stargazers
+[issues-shield]: https://img.shields.io/github/issues/DrPiBlacksmith/icLayoutRender.svg?style=for-the-badge
+[issues-url]: https://github.com/DrPiBlacksmith/icLayoutRender/issues
+[license-shield]: https://img.shields.io/github/license/DrPiBlacksmith/icLayoutRender.svg?style=for-the-badge
+[license-url]: https://choosealicense.com/licenses/agpl-3.0
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
