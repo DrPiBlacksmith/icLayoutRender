@@ -185,7 +185,6 @@ Distributed under the GNU AGPL-3.0 License. See `LICENSE` for more information.
 
 
 <!-- CONTACT -->
-## Contact
 ## Authors
 
 - [J. R. R. O. Martins](https://www.github.com/Rapos0) - jrraposo1@gmail.com

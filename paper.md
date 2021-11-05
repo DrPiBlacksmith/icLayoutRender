@@ -67,7 +67,7 @@ The GDSII file should be saved in the same folder as the proposed tool for a use
 The LayerColors.map file is created for a specific PDK. 
 Commercially available PDK, as [@XFAB:019], has the layers: diffusion in lime, poly-Si in red, n-type implantation in gold, p-type implantation in pink, and others. 
 The layer color file format is depicted in the \autoref{ver:LayerMAP} One may notice that lime, red, gold, and pink colors are represented in RGB color code. 
-GDS layer number and name are available in the PDK layer map file (see \autoref{fig:LayerNumbers}), while the color and its code are obtained in the technology file. 
+GDS layer number and name are available in the PDK layer map file (see \ref{fig:LayerNumbers}), while the color and its code are obtained in the technology file. 
 A user-friendly layer window (LSW) is often available aid both files translation in the requested LayerColors.map. 
 One may implement an automation tool for such translation. However, this procedure is only run once per PDK. GDS number, layer name, and color do not change between different PDK versions. 
 Moreover, CAD tools usually uses the color code proposed in the example \autoref{ver:LayerMAP}. Thus, this procedure is only required in the installation of a new PDK and the layer colors are usually the same. 
