@@ -51,8 +51,6 @@ Several examples using icLayoutRender are freely available on the official websi
 The icLayoutRender image rendering tool has been used in recent scientific communication [@Martins2021] and the illustration readability is remarkable.
 
 # Overview of icLayoutRender tool
-
-<<<<<<< HEAD
 In commercial CAD tools, the GDSII file is obtained following a common procedure File->Export->Stream. The output stream file should be named as <cellName.gds> and selected as the top cell to be exported from an available layout. The GDSII file should be saved in the same folder as the proposed tool for a user-friendly operation.
 
 The LayerColors.map file is created for a specific PDK. Commercially available PDK, as [@XFAB2019], has the layers: diffusion in lime, poly-Si in red, n-type implantation in gold, p-type implantation in pink, and others. The layer color file format is depicted in the following code.
