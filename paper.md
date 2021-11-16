@@ -78,7 +78,7 @@ One may implement an automation tool for such translation. However, this procedu
 | Fig. 1. Layer colors map creation using a  commercial PDK as [@XFAB2019], where one can verify (a) the layer numbers and (b) the layer colors.|
 | --- | 
 
-To prove the advantage of using icLayoutRender tool, the authors have rendered the IC layout known as StrongArm latched comparator and proposed in [@Fonseca2017]. The original image file is reproduced in Fig 2(a) using a grey color scale. Figure 2(b) depicts the same IC layout rendered by the proposed tool using gray scaled version of the rendering. A full color version of this example is depicted in Fig. 3(a). Figure 3(b)  IC layout rendered by the proposed tool in full color map.
+To prove the advantage of using icLayoutRender tool, the authors have rendered the IC layout known as StrongArm latched comparator and proposed in [@Fonseca2017]. The original image file is reproduced in Fig 2(a) using a gray color scale. Figure 2(b) depicts the same IC layout rendered by the proposed tool using gray scaled version of the rendering. A full-color version of this example is depicted in Fig. 3(a). Figure 3(b)  IC layout rendered by the proposed tool in full-color map.
 
 |![Original StrongArm latched comparator layout proposed in [@Fonseca2017]. \label{fig:SA_Fonseca}](img/SA_Fonseca.png) |![StrongArm latched comparator layout rendered by the proposed tool (gray scaled version). \label{fig:SA_GrayRendering}](img/SA_GrayRendering.svg)|
 | :----: | :----: |
@@ -87,24 +87,24 @@ To prove the advantage of using icLayoutRender tool, the authors have rendered t
 | Fig. 2. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) as its original illustration and (b)  using IC layout render tool with gray scale color map.|
 | --- | 
 
-|![Original StrongArm latched comparator layout in full color. \label{fig:SA_original}.](img/SA_original.png) |![StrongArm latched comparator layout rendered by the proposed tool (colored version). \label{fig:SA_ColorRendering}](img/SA_ColorRendering.svg) |
+|![Original StrongArm latched comparator layout in full-color. \label{fig:SA_original}.](img/SA_original.png) |![StrongArm latched comparator layout rendered by the proposed tool (colored version). \label{fig:SA_ColorRendering}](img/SA_ColorRendering.svg) |
 | :----: | :----: |
 |(a) |(b)|
 
-| Fig. 3. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) in full collor version and (b) using IC layout render tool with a full color map.|
+| Fig. 3. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) in full-collor version and (b) using IC layout render tool with a full-color map.|
 | --- | 
 
-Another common example depicted in scientific papers is the operational amplifier. Figure 4(a) illustrates an layout example of an amplifier known as OTA Miler [@Ferreira2019b] in its full color version. One may observe the readibility improvements in Fig. 4(b), where IC Layout Render tool is used.
+Another common example depicted in scientific papers is the operational amplifier. Figure 4(a) illustrates an layout example of an amplifier known as OTA Miler [@Ferreira2019b] in its full-color version. One may observe the readibility improvements in Fig. 4(b), where IC Layout Render tool is used.
 
 |![Original OTA Miler amplifier layout.\label{fig:OTA_original}.](img/OTA_original.png) |![OTA Miler amplifier layout rendered by the proposed tool (colored version). \label{fig:OTA_ColorRendering}](img/OTA_ColorRendering.svg) |
 | :----: | :----: |
 |(a) |(b)|
 
-| Fig. 4. Layout illustration of original OTA Miler amplifier layout proposed in [@Ferreira2019b] (a) in full collor version and (b) using IC layout render tool with a full color map.|
+| Fig. 4. Layout illustration of original OTA Miler amplifier layout proposed in [@Ferreira2019b] (a) in full-collor version and (b) using IC layout render tool with a full-color map.|
 | --- | 
 
 # Conclusion
-Scientific communications require accurate and repeatable results, where microelectronics research field requires a high-quality layout illustration. The proposal demonstrated a user-friendly tool to a GDSII transcription in a vectorial graph quality image saved as a pdf file. All illustration examples in this work were obtained from an IC design using the PDK of [@XFAB2019]. However, layer maps can be easily adapted to any commercial PDK. One may assert the illustration quality by increasing zoom over Fig. 2, 3 and 4 in the fpdf file or by printing them in a poster sized version. The vectorial graphical rendering is obtained by the proposal in which standard tools are unable to attain. 
+Scientific communications require accurate and repeatable results, where microelectronics research field requires a high-quality layout illustration. The proposal demonstrated a user-friendly tool to a GDSII transcription in a vectorial graph quality image saved as a pdf file. All illustration examples in this work were obtained from an IC design using the PDK of [@XFAB2019]. However, layer maps can be easily adapted to any commercial PDK. One may assert the illustration quality by increasing zoom over Fig. 2, 3 and 4 in the pdf file or by printing them in a poster sized version. The vectorial graphical rendering is obtained by the proposal in which standard tools are unable to attain. 
 
 # References
 
