@@ -129,7 +129,7 @@
 \fancyhead[R]{}
 \renewcommand{\footrulewidth}{0.25pt}
 
-\fancyfoot[L]{\parbox[t]{0.98\headwidth}{\footnotesize{\sffamily JoÃ£o R. R. O Martins and Pietro M. Ferreira,, (2021). IC-Layout
+\fancyfoot[L]{\parbox[t]{0.98\headwidth}{\footnotesize{\sffamily JoÃƒÂ£o R. R. O Martins and Pietro M. Ferreira,, (2021). IC-Layout
 Render: Image rendering tool for integrated circuit layout in
 Python. \textit{Open Source Software}. \url{https://doi.org/0.5281/zenodo.5618268}}}}
 
@@ -287,14 +287,14 @@ Python. \textit{Open Source Software}. \url{https://doi.org/0.5281/zenodo.561826
 \title{IC-Layout Render: Image rendering tool for integrated circuit
 layout in Python}
 
-        \author[1, 2]{JoÃ£o R. R. O. Martins}
+        \author[1, 2]{JoÃƒÂ£o R. R. O. Martins}
          \author[1, 2]{Pietro M. Ferreira}
     
-      \affil[1]{UniversitÃ© Paris-Saclay, CentraleSupÃ©lec, CNRS, Lab. de
-GÃ©nie Ã‰lectrique et Ã‰lectronique de Paris,91192,Gif-sur-Yvette,France}
+      \affil[1]{UniversitÃƒÂ© Paris-Saclay, CentraleSupÃƒÂ©lec, CNRS, Lab. de
+GÃƒÂ©nie Ãƒâ€°lectrique et Ãƒâ€°lectronique de Paris,91192,Gif-sur-Yvette,France}
 
-      \affil[2]{Sorbonne UniversitÃ©, CNRS, Lab. de GÃ©nie Ã‰lectrique et
-Ã‰lectronique de Paris, 75252, Paris, France}
+      \affil[2]{Sorbonne UniversitÃƒÂ©, CNRS, Lab. de GÃƒÂ©nie Ãƒâ€°lectrique et
+Ãƒâ€°lectronique de Paris, 75252, Paris, France}
   \date{\vspace{-7ex}}
 
 \begin{document}
@@ -438,7 +438,7 @@ number, layer name, and color do not change between different PDK
 versions. Moreover, CAD tools usually uses the color code proposed in
 the example. Thus, this procedure is only required in the installation
 of a new PDK. The GDS number is the data that mostly change between
-different PDK files. The layer colors are usually simmilar in commercial PDK as in \hyperlink{ref-XFAB2019}{(XFAB Mixed-Signal Foundry Experts, 2019)}.
+different PDK files. The layer colors are usually similar in commercial PDK as in \hyperlink{ref-XFAB2019}{(XFAB Mixed-Signal Foundry Experts, 2019)}.
 \begin{figure}[ht]
  \begin{center}
   \subfigure[\label{fig:LayerNumbers}]{\includegraphics{img/LayerNumbers.png}}
@@ -447,16 +447,28 @@ different PDK files. The layer colors are usually simmilar in commercial PDK as 
  \end{center}
 \end{figure}
 
+The first scientific paper using he icLayoutRender image rendering tool is from the authors in
+ \hyperlink{ref-Martins2021}{(Martins et al., 2021)}, where a voltage-controlled oscillator (VCO) 
+is designed. Figure \ref{fig:VCO_color} illustrates such VCO and includes details about the required 
+pattern ground shield. Such structure is mandatory for radio frequency circuits, such as a VCO, and 
+is only readable if a high quality vectorial image is available. That's the original motivation of the 
+authors in proposing icLayoutRender tool. 
+\begin{figure}[ht]
+\begin{center}
+\includegraphicsx{./VCO_color.pdf}
+\caption{Layout illustration of a VCO from (Martins et al., 2021), including a pattern ground shield.}
+\label{fig:VCO_color}
+\end{center}\end{figure}
+
 To prove the advantage of using icLayoutRender tool, the authors have
-rendered the IC layout known as StrongArm latched comparator and
-proposed in \hyperlink{ref-Fonseca2017}{(Fonseca et al., 2017)}. The original image file is
-reproduced in Fig \ref{fig:SA_Fonseca} using a gray color scale. Figure \ref{fig:SA_GrayRendering} depicts the
+rendered the IC layout known as StrongArm latched comparator and proposed in \hyperlink{ref-Fonseca2017}{(Fonseca et al., 2017)}. 
+The original image file is reproduced in Fig \ref{fig:SA_Fonseca} using a gray color scale. Figure \ref{fig:SA_GrayRendering} depicts the
 same IC layout rendered by the proposed tool using gray scaled version
 of the rendering. A full-color version of this example is depicted in
 Fig. \ref{fig:SA_original}. Figure \ref{fig:SA_ColorRendering} IC layout rendered by the proposed tool in full
 color map.
 
-\begin{figure}
+\begin{figure}[ht]
  \begin{center}
   \subfigure[\label{fig:SA_Fonseca}]{\includegraphics{img/SA_Fonseca.png}}
   \subfigure[\label{fig:SA_GrayRendering}]{\includegraphics{img/SA_GrayRendering.pdf}}
@@ -465,7 +477,7 @@ color map.
  \end{center}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[ht]
  \begin{center}
   \subfigure[\label{fig:SA_original}]{\includegraphics{img/SA_original.png}}
   \subfigure[\label{fig:SA_ColorRendering}]{\includegraphics{img/SA_ColorRendering.pdf}}
@@ -480,7 +492,7 @@ amplifier. Figure \ref{fig:OTA_original} illustrates an layout example of an amp
 known as OTA Miler \hyperlink{ref-Ferreira2019b}{(Ferreira et al., 2019)} in its full-color version.
 One may observe the readability improvements in Fig. \ref{fig:OTA_ColorRendering}, where IC
 Layout Render tool is used.
-\begin{figure}
+\begin{figure}[ht]
  \begin{center}
   \subfigure[\label{fig:OTA_original}]{\includegraphics{img/OTA_original.png}}
   \subfigure[\label{fig:OTA_ColorRendering}]{\includegraphics{img/OTA_ColorRendering.pdf}}
@@ -513,7 +525,7 @@ are unable to attain.
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
 \leavevmode\hypertarget{ref-Calma1987}{}%
-Calma Company. (1987). \emph{{GDSIIâ„¢ Stream Format Manual}} (February).
+Calma Company. (1987). \emph{{GDSIIÃ¢â€žÂ¢ Stream Format Manual}} (February).
 \url{http://bitsavers.informatik.uni-stuttgart.de/pdf/calma/GDS_II_Stream_Format_Manual_6.0_Feb87.pdf}
 
 \leavevmode\hypertarget{ref-Ferreira2019b}{}%
@@ -523,7 +535,7 @@ Architecture}. \emph{Proc. IEEE Design, Test, Integration \& Packaging
 of MEMS/MOEMS}, 1--4. \url{https://doi.org/10.1109/DTIP.2019.8752699}
 
 \leavevmode\hypertarget{ref-Fonseca2017}{}%
-Fonseca, A. V., Khattabi, R. E., Afshari, W. A., BarÃºqui, F. A. P.,
+Fonseca, A. V., Khattabi, R. E., Afshari, W. A., BarÃƒÂºqui, F. A. P.,
 Soares, C. F. T., \& Ferreira, P. M. (2017). {A Temperature-Aware
 Analysis of Latched Comparators for Smart Vehicle Applications}.
 \emph{Proc ACM IEEE Symp. Integr. Circuits Syst. Design}, 1--6.
@@ -531,8 +543,8 @@ Analysis of Latched Comparators for Smart Vehicle Applications}.
 
 \leavevmode\hypertarget{ref-Martins2021}{}%
 Martins, J. R. O. R., Alves, F., \& Ferreira, P. M. (2021). {A 237 ppm /
-â—¦ C L-Band Active Inductance Based Voltage Controlled Oscillator in SOI
-0 . 18 Âµm}. \emph{Proc ACM IEEE Symp. Integr. Circuits Syst. Design},
+Ã¢â€”Â¦ C L-Band Active Inductance Based Voltage Controlled Oscillator in SOI
+0 . 18 Ã‚Âµm}. \emph{Proc ACM IEEE Symp. Integr. Circuits Syst. Design},
 1--6. \url{https://doi.org/10.1109/SBCCI53441.2021.9529990}
 
 \leavevmode\hypertarget{ref-Vollmer2020}{}%
