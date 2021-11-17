@@ -76,29 +76,37 @@ One may implement an automation tool for such translation. However, this procedu
 | Fig. 1. Layer colors map creation using a  commercial PDK as [@XFAB2019], where one can verify (a) the layer numbers and (b) the layer colors.|
 | --- | 
 
-To prove the advantage of using icLayoutRender tool, the authors have rendered the IC layout known as StrongArm latched comparator and proposed in [@Fonseca2017]. The original image file is reproduced in Fig 2(a) using a gray color scale. Figure 2(b) depicts the same IC layout rendered by the proposed tool using gray scaled version of the rendering. A full-color version of this example is depicted in Fig. 3(a). Figure 3(b)  IC layout rendered by the proposed tool in full-color map.
+The first scientific paper using he icLayoutRender image rendering tool is from the authors in [@Martins2021], where a voltage-controlled oscillator (VCO) is designed. Figure 2 illustrates such VCO and includes details about the required pattern ground shield. Such structure is mandatory for radio frequency circuits, such as a VCO, and is only readable if a high quality vectorial image is available. That's the original motivation of the 
+authors in proposing icLayoutRender tool. 
+|![Layout illustration of a VCO from [@Martins2021], including a pattern ground shield.. \label{fig:LayerNumbers}](img/VCO_color.svg)|
+| :----: |
+
+| Fig. 2. Layout illustration of a VCO from [@Martins2021], including a pattern ground shield.|
+| --- | 
+
+To prove the advantage of using icLayoutRender tool, the authors have rendered the IC layout known as StrongArm latched comparator and proposed in [@Fonseca2017]. The original image file is reproduced in Fig 3(a) using a gray color scale. Figure 3(b) depicts the same IC layout rendered by the proposed tool using gray scaled version of the rendering. A full-color version of this example is depicted in Fig. 4(a). Figure 4(b)  IC layout rendered by the proposed tool in full-color map.
 
 |![Original StrongArm latched comparator layout proposed in [@Fonseca2017]. \label{fig:SA_Fonseca}](img/SA_Fonseca.png) |![StrongArm latched comparator layout rendered by the proposed tool (gray scaled version). \label{fig:SA_GrayRendering}](img/SA_GrayRendering.svg)|
 | :----: | :----: |
 |(a) |(b)|
 
-| Fig. 2. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) as its original illustration and (b)  using IC layout render tool with gray scale color map.|
+| Fig. 3. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) as its original illustration and (b)  using IC layout render tool with gray scale color map.|
 | --- | 
 
 |![Original StrongArm latched comparator layout in full-color. \label{fig:SA_original}.](img/SA_original.png) |![StrongArm latched comparator layout rendered by the proposed tool (colored version). \label{fig:SA_ColorRendering}](img/SA_ColorRendering.svg) |
 | :----: | :----: |
 |(a) |(b)|
 
-| Fig. 3. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) in full-collor version and (b) using IC layout render tool with a full-color map.|
+| Fig. 4. Layout illustration of StrongArm latched comparator proposed in [@Fonseca2017] (a) in full-collor version and (b) using IC layout render tool with a full-color map.|
 | --- | 
 
-Another common example depicted in scientific papers is the operational amplifier. Figure 4(a) illustrates an layout example of an amplifier known as OTA Miler [@Ferreira2019b] in its full-color version. One may observe the readibility improvements in Fig. 4(b), where IC Layout Render tool is used.
+Another common example depicted in scientific papers is the operational amplifier. Figure 5(a) illustrates an layout example of an amplifier known as OTA Miler [@Ferreira2019b] in its full-color version. One may observe the readibility improvements in Fig. 5(b), where IC Layout Render tool is used.
 
 |![Original OTA Miler amplifier layout.\label{fig:OTA_original}.](img/OTA_original.png) |![OTA Miler amplifier layout rendered by the proposed tool (colored version). \label{fig:OTA_ColorRendering}](img/OTA_ColorRendering.svg) |
 | :----: | :----: |
 |(a) |(b)|
 
-| Fig. 4. Layout illustration of original OTA Miler amplifier layout proposed in [@Ferreira2019b] (a) in full-collor version and (b) using IC layout render tool with a full-color map.|
+| Fig. 5. Layout illustration of original OTA Miler amplifier layout proposed in [@Ferreira2019b] (a) in full-collor version and (b) using IC layout render tool with a full-color map.|
 | --- | 
 
 # Conclusion
