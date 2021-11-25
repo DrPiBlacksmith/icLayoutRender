@@ -142,6 +142,6 @@ Modular Analog Mixed HV Technology* (pp. 1--22).
 https://www.xfab.com/technology/cmos/018-um-xh018/
 
 # To cite this work
-João R. R. O Martins and Pietro M. Ferreira,, (2021). IC-Layout
+João R. R. O Martins, Francisco Alves, and Pietro M. Ferreira,, (2021). IC-Layout
 Render: Image rendering tool for integrated circuit layout in
 Python. *Open Source Software*. https://doi.org/0.5281/zenodo.5618268
