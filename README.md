@@ -111,7 +111,7 @@ For Ubuntu:
 ```bash
   python -m pip install --user gdspy
   python -m pip install pandas
-  python -m pip install:l git+https://github.com/Aypac/GDSLatexConverter.git
+  python -m pip install:l git+https://github.com/DrPiBlacksmith/GDSLatexConverter.git
 ```
 #### Installing TeXLive
 
