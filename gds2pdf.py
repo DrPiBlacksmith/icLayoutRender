@@ -22,7 +22,7 @@ def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
     Colors.set_index('GDSNumber',inplace = True)
     Colors.drop(columns=['Layer'],inplace = True)
     #Create converter
-    conv = GDSLatexConverter(lib,0.1)
+    conv = GDSLatexConverter(lib)
 
     # Display all available layers:
     containedLayers = conv.all_layer

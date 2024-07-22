@@ -70,4 +70,4 @@ response = input()
 if response != "yes":
    sys.exit(3)
     
-gds2pdf(cellName,pdfName,layerColors, pdfTex)
+gds2pdf(cellName,pdfName,layerColors,pdfTex)
