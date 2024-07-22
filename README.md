@@ -136,17 +136,16 @@ tex --version
 
 Please first make sure that ```PYTHON_INSTALLATION_FOLDER/include``` is in your PATH. 
 
-Download the precompiled release of [gdspy](https://github.com/heitzmann/gdspy/releases)
-
-Once downloaded open your command prompt
-
+Download the precompiled release of [gdspy](https://github.com/heitzmann/gdspy/releases). Once downloaded open your command prompt
 ```cmd 
 cd *DOWNLOAD_PATH*
 python -m pip install ****.whl
 python -m pip install pandas
-pip install git+https://github.com/Aypac/GDSLatexConverter.git
+pip install git+https://github.com/DrPiBlacksmith/GDSLatexConverter.git
 ```
-For installing latex compiler we sugest [MiKTeX](https://miktex.org/download) 
+Another option is to compile gdspy using  [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/). During installation, make sure to select the necessary components for C++ development, including the Windows 10 SDK and the C++ build tools.
+
+For installing latex compiler, we sugest [TexLive](https://www.tug.org/texlive/windows.html) and VSCode extension [LaTeX WorkShop](https://github.com/James-Yu/LaTeX-Workshop/wiki/Install). [MiKTeX](https://miktex.org/download) is another lightweight distribution with a convenient automatic on-demand package install. Note, however, that for MiKTeX to work correctly with Latex Workshop, you need to install [Perl](https://strawberryperl.com/).
 
 
 ## Layout Illustrations using icLayoutRender
@@ -157,6 +156,8 @@ For installing latex compiler we sugest [MiKTeX](https://miktex.org/download)
 ### Strong Arm Comparator
 ![SA_Razavi2015](Examples/SA_Razavi2015.svg)
 
+### Neuromorphic Circuit
+![eNEuron](Examples/eNeuron.svg)
 
 <!-- ROADMAP -->
 ## Roadmap
