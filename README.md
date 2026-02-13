@@ -92,7 +92,10 @@ For some help please refer to
   Usage: icLayoutRender.py -g <cellNameFile> -m <layerColorsFile>
   For pdfTex compiler do: icLayoutRender.py -X -g <cellNameFile> -m <layerColorsFile>
 ```
-   
+In this version we propose an inteactive Jupyter nootebook version of icLayoutRender.py
+
+***TO DO Jupyter***
+
 ## Installation
 
 ### Linux
