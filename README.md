@@ -99,15 +99,15 @@ In this version we propose an inteactive Jupyter nootebook version of icLayoutRe
 ## Installation
 
 ### Linux
-Please first make sure that python 3 is installed on your machine with the devel extension, otherwise please run
+Please first make sure that python 3 is installed on your machine with the developer extension, otherwise please run
 
 For CentOs:
 ```bash
-  sudo yum install python3-devel
+  sudo yum install python3-dev
 ```
 For Ubuntu:
 ```bash
-  sudo apt install python3-devel
+  sudo apt install python3-dev
 ```
 #### Dependencys Installation
 
@@ -128,13 +128,12 @@ For Ubuntu:
   pearl install-tl -gui
 ```
 
-Installation is completed at /usr/local/texlive/2021
-Please check if the 2021 version is installed in the default path using
+Installation is completed at /usr/local/texlive/2025
+Please check if the 2025 version (or higher) is installed in the default path using
 
 ```bash
 tex --version
 ```
-
 ### Windows
 
 Please first make sure that ```PYTHON_INSTALLATION_FOLDER/include``` is in your PATH. 
@@ -148,8 +147,23 @@ pip install git+https://github.com/DrPiBlacksmith/GDSLatexConverter.git
 ```
 Another option is to compile gdspy using  [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/). During installation, make sure to select the necessary components for C++ development, including the Windows 10 SDK and the C++ build tools.
 
-For installing latex compiler, we sugest [TexLive](https://www.tug.org/texlive/windows.html) and VSCode extension [LaTeX WorkShop](https://github.com/James-Yu/LaTeX-Workshop/wiki/Install). [MiKTeX](https://miktex.org/download) is another lightweight distribution with a convenient automatic on-demand package install. Note, however, that for MiKTeX to work correctly with Latex Workshop, you need to install [Perl](https://strawberryperl.com/).
+For installing latex compiler, we sugest [TexLive](https://www.tug.org/texlive/windows.html) and VSCode extension [LaTeX WorkShop](https://github.com/James-Yu/LaTeX-Workshop/wiki/Install). [MiKTeX](https://miktex.org/download) is another lightweight distribution with a convenient automatic on-demand package install. Note, however, that for MiKTeX to work correctly with Latex Workshop, you need to install [Perl](https://strawberryperl.com/). The authors do not recommend the usage of MikTeX.
 
+### VSCode & Conda Environment
+Please first make sure that your conda environment has python 3 is installed  with the developer extension, otherwise please run
+For activated conda environment:
+```bash
+  conda install python3-dev
+```
+#### Dependencys Installation
+
+```bash
+  conda install --user gdspy
+  conda install pandas
+  conda install git+https://github.com/DrPiBlacksmith/GDSLatexConverter.git
+```
+#### Installing TeXLive
+Follow the explanation for Windows or Linux dependin on your operating system. Install the extension [Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop).
 
 ## Layout Illustrations using icLayoutRender
 
@@ -166,8 +180,6 @@ For installing latex compiler, we sugest [TexLive](https://www.tug.org/texlive/w
 ## Roadmap
 
 See the [open issues](https://github.com/DrPiBlacksmith/icLayoutRender/issues) for a list of proposed features (and known issues).
-
-
 
 <!-- CONTRIBUTING -->
 ## Contributing

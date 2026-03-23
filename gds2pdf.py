@@ -16,6 +16,16 @@ def gds2pdf(cellName,pdfName,layerColors, pdfTex=False, opacity=0.2):
 
     gdsii = gdspy.GdsLibrary()
     lib = gdsii.read_gds(infile=cellName)#gds file open
+    #Flatten top cell
+    top_cells = lib.top_level()
+    if len(top_cells) == 0:
+        raise ValueError("No top-level cell found in GDS.")
+    top = top_cells[0]
+    flat = top.copy(top.name + "_flat", deep_copy=True)
+    flat.flatten()
+    newlib = gdspy.GdsLibrary()
+    newlib.add(flat)
+    lib = newlib
 
     Colors = pd.read_csv(layerColors,sep='!',dtype={'GDSNumber':int,'Layer':str,'Color':str})#map file open
     #GDS layer numbers and names are mapped to the colors
